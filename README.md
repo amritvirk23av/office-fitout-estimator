@@ -6,7 +6,7 @@ construction programme recalculate live, with no page reloads.
 
 > Front-end prototype. All pricing is **indicative dummy data** — not a formal quotation.
 
-**Live demo:** _add your deployment URL here_
+**▸ [View the live demo](https://amritvirk23av.github.io/office-fitout-estimator/)**
 
 ---
 
