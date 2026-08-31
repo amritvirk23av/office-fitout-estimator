@@ -42,12 +42,14 @@ At 12,000 SF the estimate ranges from **≈ $2.81M / 12 weeks** (all standard) t
 
 ## Design
 
-Matte, architectural, built to read as construction documentation rather than a tech
-product: a warm-grey paper ground with a faint drafting grid, a single brass accent,
-`Archivo` (expanded for the monumental figures) paired with `IBM Plex Mono` for every
-number and dimension. The configurator is styled as a drawing sheet; the estimate panel
-is its title block. Hairline rules, no drop shadows, no rounded corners. Locks to a
-single landscape screen on tablet and desktop.
+**"Harbor"** — a cool tinted ground with one soft warm bloom in the corner, a single
+petrol accent (`#2E5C63`), and figures set to carry meaning through colour. `Archivo`
+(expanded for the monumental figures) paired with `IBM Plex Mono` for every number and
+dimension. The configurator keeps its architectural structure — a dimension-line slider,
+a schedule-of-quantities ledger, a title-block estimate panel — but the card now floats
+on the tinted ground with a gentle radius and a whisper of shadow. Design tokens live in
+[`src/index.css`](src/index.css). Locks to a single landscape screen on tablet and
+desktop.
 
 ## Stack
 

@@ -26,12 +26,16 @@ export function SystemSelector({ code, label, options, value, amount, onChange, 
     <div className="border-b border-line py-2 last:border-b-0">
       <div className="flex flex-col gap-1.5 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
         <div className="flex min-w-0 items-baseline gap-2.5">
-          <span className="font-mono text-[10px] tracking-widest text-brass">{code}</span>
+          <span className="font-mono text-[10px] tracking-widest text-accent">{code}</span>
           <span className="text-[13px] font-medium text-ink">{label}</span>
         </div>
 
         <div className="flex shrink-0 flex-wrap items-center gap-x-3 gap-y-1">
-          <div role="radiogroup" aria-label={label} className="inline-flex border border-line-strong">
+          <div
+            role="radiogroup"
+            aria-label={label}
+            className="inline-flex overflow-hidden rounded-md border border-line-strong"
+          >
             {options.map((opt, i) => {
               const active = opt.id === value
               return (
@@ -44,11 +48,13 @@ export function SystemSelector({ code, label, options, value, amount, onChange, 
                   className={[
                     'relative px-2.5 py-1.5 font-mono text-[11px] uppercase tracking-[0.08em] transition-colors',
                     i > 0 ? 'border-l border-line' : '',
-                    active ? 'bg-concrete text-ink' : 'bg-paper-raised text-graphite hover:text-ink',
+                    active
+                      ? 'bg-accent/10 text-accent'
+                      : 'bg-transparent text-graphite hover:text-ink',
                   ].join(' ')}
                 >
                   {opt.label}
-                  {active && <span className="absolute inset-x-0 bottom-0 h-0.5 bg-brass" />}
+                  {active && <span className="absolute inset-x-0 bottom-0 h-0.5 bg-accent" />}
                 </button>
               )
             })}

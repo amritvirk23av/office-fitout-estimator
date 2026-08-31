@@ -86,17 +86,17 @@ export function DimensionControl({ value, workstations, onChange }: Props) {
             <span className="absolute right-0 top-1/2 h-3.5 w-px -translate-y-1/2 rotate-45 bg-ink" />
             {/* measured span */}
             <span
-              className="absolute top-0 left-0 h-px bg-brass transition-[width] duration-150"
+              className="absolute top-0 left-0 h-px bg-accent transition-[width] duration-150"
               style={{ width: `${pct}%` }}
             />
             {/* travelling marker */}
             <span
-              className="absolute top-1/2 h-8 w-0.5 -translate-x-1/2 -translate-y-1/2 bg-brass transition-[left] duration-150"
+              className="absolute top-1/2 h-8 w-0.5 -translate-x-1/2 -translate-y-1/2 bg-accent transition-[left] duration-150"
               style={{ left: `${pct}%` }}
             />
             {focused && (
               <span
-                className="absolute top-1/2 h-10 w-4 -translate-x-1/2 -translate-y-1/2 border border-brass transition-[left] duration-150"
+                className="absolute top-1/2 h-10 w-4 -translate-x-1/2 -translate-y-1/2 border border-accent transition-[left] duration-150"
                 style={{ left: `${pct}%` }}
               />
             )}
@@ -127,7 +127,7 @@ export function DimensionControl({ value, workstations, onChange }: Props) {
       {/* precise entry ------------------------------------------------- */}
       <label className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.16em] text-graphite">
         Enter area
-        <span className="inline-flex items-baseline border-b border-line-strong focus-within:border-brass">
+        <span className="inline-flex items-baseline border-b border-line-strong focus-within:border-accent">
           <input
             key={value}
             ref={inputRef}

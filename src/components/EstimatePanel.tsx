@@ -37,14 +37,14 @@ export function EstimatePanel({ estimate, revision, client, onClient, onReset }:
 
       <div className="flex min-h-0 flex-1 flex-col overflow-y-auto">
         {/* headline */}
-        <div className="border-b border-line-strong px-5 pb-3 pt-3">
+        <div className="border-b border-line-strong px-5 pb-2.5 pt-2.5">
           <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-graphite">
             Indicative cost
           </div>
           <div className="u-expanded mt-1.5 text-[2.15rem] font-semibold leading-none tabular-nums text-ink">
             {currency(total)}
           </div>
-          <div className="mt-1.5 h-0.5 w-14 bg-brass" />
+          <div className="mt-1.5 h-0.5 w-14 bg-accent" />
 
           <div className="mt-3 grid grid-cols-2 gap-3">
             <Metric label="Programme">{weeksLabel(weeks)}</Metric>
@@ -60,7 +60,7 @@ export function EstimatePanel({ estimate, revision, client, onClient, onReset }:
         </div>
 
         {/* schedule of quantities */}
-        <div className="px-5 py-3">
+        <div className="px-5 py-2.5">
           <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-graphite">
             Schedule of quantities
           </div>
@@ -99,7 +99,7 @@ export function EstimatePanel({ estimate, revision, client, onClient, onReset }:
               value={client}
               onChange={(e) => onClient(e.target.value)}
               placeholder="Client name"
-              className="mt-1.5 w-full border-b border-line-strong bg-transparent pb-1 font-sans text-[13px] normal-case tracking-normal text-ink placeholder:text-graphite/70 focus:border-brass focus:outline-none"
+              className="mt-1.5 w-full border-b border-line-strong bg-transparent pb-1 font-sans text-[13px] normal-case tracking-normal text-ink placeholder:text-graphite/70 focus:border-accent focus:outline-none"
             />
           </label>
 
@@ -112,7 +112,7 @@ export function EstimatePanel({ estimate, revision, client, onClient, onReset }:
           <button
             type="button"
             onClick={onReset}
-            className="mt-3 border border-line-strong px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.16em] text-graphite transition-colors hover:border-brass hover:text-brass"
+            className="mt-3 rounded-md border border-line-strong px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.16em] text-graphite transition-colors hover:border-accent hover:text-accent"
           >
             Reset specification
           </button>

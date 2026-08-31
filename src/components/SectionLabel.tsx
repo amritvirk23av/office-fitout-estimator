@@ -9,7 +9,7 @@ export function SectionLabel({ index, children, hint }: Props) {
   return (
     <div className="flex items-baseline justify-between gap-3 border-b border-line pb-1.5">
       <h2 className="flex items-baseline gap-2.5 font-mono text-[11px] uppercase tracking-[0.24em] text-ink">
-        {index && <span className="text-brass">{index}</span>}
+        {index && <span className="text-accent">{index}</span>}
         {children}
       </h2>
       {hint && (

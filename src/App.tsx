@@ -30,9 +30,9 @@ export default function App() {
   }, [client])
 
   return (
-    <div className="flex min-h-full flex-col overflow-y-auto bg-paper lg:items-center lg:justify-center lg:p-5 xl:p-7">
-      <div className="flex w-full max-w-[1480px] flex-1 flex-col border-line-strong lg:h-[calc(100dvh-2.5rem)] lg:max-h-[760px] lg:flex-none lg:grid lg:grid-cols-[minmax(0,1fr)_400px] lg:grid-rows-1 lg:overflow-hidden lg:border xl:max-h-[820px] xl:grid-cols-[minmax(0,1fr)_440px]">
-        <div className="drafting-grid flex min-h-0 flex-col gap-5 px-5 py-5 lg:overflow-y-auto xl:gap-6 xl:px-8 xl:py-7">
+    <div className="flex min-h-full flex-col overflow-y-auto lg:items-center lg:justify-center lg:p-6 xl:p-8">
+      <div className="flex w-full max-w-[1480px] flex-1 flex-col border-line-strong bg-paper-raised lg:h-[calc(100dvh-3rem)] lg:max-h-[760px] lg:flex-none lg:grid lg:grid-cols-[minmax(0,1fr)_400px] lg:grid-rows-1 lg:overflow-hidden lg:rounded-xl lg:border lg:shadow-[0_1px_2px_rgba(20,28,34,0.04),0_18px_40px_-22px_rgba(20,28,34,0.18)] xl:max-h-[820px] xl:grid-cols-[minmax(0,1fr)_440px]">
+        <div className="flex min-h-0 flex-col gap-5 px-5 py-5 lg:overflow-y-auto xl:gap-6 xl:px-8 xl:py-7">
           <Header />
 
           <DimensionControl
